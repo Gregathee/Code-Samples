@@ -9,7 +9,7 @@
 #include<random>
 #include<map>
 #include<utility>
-#include"AccountHelper.h"
+#include"AccountFactory.h"
 
 using std::cout;
 using std::cin;
@@ -33,8 +33,8 @@ int main ()
 	{
 		DollarAmount balance{ 0 };
 		double interestRate{ 0 };
-
 		map<int, Account*>::iterator selectedAccount;
+
 		do { MainMenu (selection); } while (cin.fail());
 
 		if (selection < 4 && selection > 0)
@@ -80,7 +80,6 @@ void CreateAccounts ( unsigned& selection, unsigned& numberOfAccounts, map<int, 
 	case 4:
 		cout << "Enter the account number of the account you wish to delete.\n\n";
 		cin >> numberOfAccounts;
-
 		accountPtrs.erase ( numberOfAccounts );
 		break;
 	case 5:

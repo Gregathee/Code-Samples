@@ -3,25 +3,13 @@
 PremiumChecking::PremiumChecking ():Account(){}
 
 PremiumChecking::PremiumChecking ( std::string fName, std::string lName, DollarAmount bal )
-	:Account(fName, lName, bal)
-{
-	chargeMonthlyFee ();
-}
+	:Account(fName, lName, bal) { chargeMonthlyFee (); }
 
-void PremiumChecking::setMonthlyFee ( DollarAmount fee )
-{
-	mFee = fee;
-}
+void PremiumChecking::setMonthlyFee ( DollarAmount fee ) { mFee = fee; }
 
-DollarAmount PremiumChecking::getMonthlyFee ()
-{
-	return mFee;
-}
+DollarAmount PremiumChecking::getMonthlyFee () { return mFee; }
 
-void PremiumChecking::chargeMonthlyFee ()
-{
-	setBalance(getBalance () - mFee);
-}
+void PremiumChecking::chargeMonthlyFee () { setBalance(getBalance () - mFee); }
 
 void PremiumChecking::display () const
 {
