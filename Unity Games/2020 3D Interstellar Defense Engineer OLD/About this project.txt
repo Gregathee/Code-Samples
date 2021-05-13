@@ -1,0 +1,1 @@
+This project was my first version of Interstellar Defense Engineer. It has been refractored after learning better coding practices such as design patterns. Tread carefully because its A MESS haha.

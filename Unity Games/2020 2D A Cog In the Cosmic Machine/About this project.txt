@@ -1,0 +1,1 @@
+This project was made at Bradley University as a part of a capstone project with 20 other people. I only have code that I have written in this directory. 

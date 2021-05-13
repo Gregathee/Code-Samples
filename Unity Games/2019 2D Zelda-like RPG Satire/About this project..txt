@@ -1,0 +1,1 @@
+This project was made to study the effects of clear goals and navigational aids in games. It was my first completed project and was a leanring experience if nothing else. There are quite a bit of naive things that could use TLC but fully functional non the less. 
